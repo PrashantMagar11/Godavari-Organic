@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BhajiMart</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/commen.css">
+</head>
+
+<body>
+   <nav>
+
+      <h1><span>God</span>avari</h1>
+      <img src="img/symb2.png" alt="" class="symbol">
+
+      <div class="dropdown2 hov1">
+         <img class="dropimg" src="img/loca.png" alt="">
+         <p class="locate">Select Your Location</p>
+         <div class="dropcontent hov1">
+            <div class="d-flex">
+               <a class="topmargin" href="#">Sign Up</a>
+               <br>
+               <a class="botmargin" href="#">Sign In</a>
+            </div>
+         </div>
+      </div>
+
+      <input type="text" placeholder="Serach For Products "><button id="b1"><img class="searchbar" src="img/sr2.png"
+            alt=""></button>
+
+
+      <div class="cart hov1">
+         <a href=""><img src="img/cart.png" alt=""></a>
+         <p class="button-p">Cart</p>
+      </div>
+
+      <div class="dropdown1 hov1">
+         <img class="dropimg" src="img/ac.png" alt="">
+         <p  class="button-p">Account</p>
+         <div class="dropcontent hov1">
+            <div class="dnc d-flex">
+               <a href="#">Sign Up</a>
+               <br>
+               <a href="#">Sign In</a>
+            </div>
+         </div>
+      </div>
+
+
+   </nav>
+   <br>
+   <main>
+      <div class="container1">
+
+         <div class="slideshow-container">
+
+            <div class="mySlides fade">
+               <div class="numbertext">1 / 3</div>
+               <img src="https://source.unsplash.com/1250x435/?cricket,tiger" style="width:100%">
+               <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+               <div class="numbertext">2 / 3</div>
+               <img src="https://source.unsplash.com/1250x435/?cricket,vegitables" style="width:100%">
+               <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+               <div class="numbertext">3 / 3</div>
+               <img src="https://source.unsplash.com/1250x435/?animals" style="width:100%">
+               <div class="text">Caption Three</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+         </div>
+         <br>
+
+         <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+         </div>
+
+         <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+               showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+               showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+               let i;
+               let slides = document.getElementsByClassName("mySlides");
+               let dots = document.getElementsByClassName("dot");
+               if (n > slides.length) { slideIndex = 1 }
+               if (n < 1) { slideIndex = slides.length }
+               for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+               }
+               for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+               }
+               slides[slideIndex - 1].style.display = "block";
+               dots[slideIndex - 1].className += " active";
+            }
+
+
+
+         </script>
+
+      </div>
+      <div class="container2 m-top">
+         <div class="box1 box-border over">
+            <p>Pickup And Dilivery</p>
+         </div>
+         <div class="box2 box-border over">
+            <p>Popular services</p>
+         </div>
+         <div class="box3 box-border over m-auto">
+            <p>Fresh vegitables</p>
+         </div>
+         <div class="box4 box-border over">
+            <p>Desi Dairy Products</p>
+         </div>
+
+      </div>
+
+      <div class="bar m-top">
+         <a href="#">Try Free 30Days</a>
+      </div>
+
+      <div class="container3 m-top">
+         <div class="b1 cb3 over"> <img class="cb3img" src="https://source.unsplash.com/1250x435/?animals,tiger" alt=""> </div>
+         <div class="b3 cb3 over m-auto"> <img class="cb3img" src="https://source.unsplash.com/1250x435/?zebra" alt=""> </div>
+         <div class="b2 cb3 over m-auto"> <img class="cb3img" src="https://source.unsplash.com/1250x435/?cobra" alt=""> </div>
+         <div class="b4 cb3 over m-auto"> <img class="cb3img" src="https://source.unsplash.com/1250x435/?penguin" alt=""> </div>
+         <div class="b5 cb3 over m-auto"> <img class="cb3img" src="https://source.unsplash.com/1250x435/?cat" alt=""> </div>
+         <div class="b6 cb3 over"> <img class="cb3img" src="https://source.unsplash.com/1250x435/?dog" alt=""> </div>
+
+      </div>
+
+      <div class="container4 m-top">
+         <div class="c1 cbxx">
+            <div class="cir m-auto"></div>
+            <p class="c56-p">Vegitables</p>
+         </div>
+         <div class="c2 cbxx m-auto">
+            <div class="cir m-auto"></div>
+            <p class="c56-p">dairy Products</p>
+         </div>
+         <div class="c3 cbxx m-auto">
+            <div class="cir m-auto"></div>
+            <p class="c56-p">Fruits</p>
+         </div>
+         <div class="c4 cbxx">
+            <div class="cir m-auto"></div>
+            <p class="c56-p">Grains</p>
+         </div>
+      </div>
+
+      <div class="container5 m-top">
+         <div class="c1 cbxx">
+            <div class="cir m-auto"></div>
+            <p class="c56-p">Vegitables</p>
+         </div>
+         <div class="c2 cbxx m-auto">
+            <div class="cir m-auto"></div>
+            <p class="c56-p">dairy Products</p>
+         </div>
+         <div class="c3 cbxx m-auto">
+            <div class="cir m-auto"></div>
+            <p class="c56-p">Fruits</p>
+         </div>
+         <div class="c4 cbxx">
+            <div class="cir m-auto"></div>
+            <p class="c56-p">Grains</p>
+         </div>
+      </div>
+
+      <div class="container6 m-top">
+
+         <div class="bx1 big-bx"><img class="c6img" src="https://source.unsplash.com/1250x435/?furniture" alt=""></div>
+         <div class="bx2 big-bx m-auto"><img class="c6img" src="https://source.unsplash.com/1250x435/?sofa" alt=""></div>
+         <div class="bx3 big-bx"><img class="c6img" src="https://source.unsplash.com/1250x435/?showcase" alt=""></div>
+
+      </div>
+      <p>more
+      </p>
+
+      <div class="container7 m-top">
+
+         <div class="bx7-coman"></div>
+         <div class="bx7-2 bx7-coman"></div>
+
+      </div>
+
+      <div class="container8 m-top">
+
+         <div class="bx1 big-bx"><img class="c6img" src="https://source.unsplash.com/1250x435/?furniture" alt=""></div>
+         <div class="bx2 big-bx m-auto"><img class="c6img" src="https://source.unsplash.com/1250x435/?sofa" alt=""></div>
+         <div class="bx3 big-bx"><img class="c6img" src="https://source.unsplash.com/1250x435/?showcase" alt=""></div>
+
+      </div>
+
+
+
+
+
+     
+
+      </div>
+   </main>
+   
+
+
+   <footer class="m-top" >
+      <div class="container12 "></div>
+      <div class="container13">
+         <civ class="col1"></civ>
+         <civ class="col2"></civ>
+         <civ class="col3"></civ>
+      </div>
+   </footer>
+</body>
+
+</html>
